@@ -1,11 +1,13 @@
 [gd_scene format=3 uid="uid://dmbdm1m7887hk"]
 
+[ext_resource type="Script" uid="uid://s11xit4fpms" path="res://entities/props/wooden_crate.gd" id="1_7uqq6"]
 [ext_resource type="PackedScene" uid="uid://dv8hw3wlxos1t" path="res://assets/models/game_asset_wooden_crate.glb" id="1_obbym"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_d3wnt"]
 size = Vector3(2, 2, 2)
 
 [node name="WoodenCrate" type="RigidBody3D" unique_id=1318648761]
+script = ExtResource("1_7uqq6")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=807395521]
 transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, 0, 0)

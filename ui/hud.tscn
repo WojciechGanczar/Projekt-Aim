@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://n5yiruucilvc"]
 
 [ext_resource type="Script" uid="uid://b141cpjx1uac8" path="res://ui/hud.gd" id="1_276te"]
-[ext_resource type="Texture2D" uid="uid://chmom56uwormx" path="res://assets/textures/UI_Crosshair_Arcade_01.png" id="1_rbyyf"]
+[ext_resource type="Texture2D" uid="uid://dqho06k0d28fx" path="res://assets/textures/UI_Crosshair_Arcade_01.png" id="1_rbyyf"]
 
 [node name="Hud" type="CanvasLayer" unique_id=1593725528]
 script = ExtResource("1_276te")

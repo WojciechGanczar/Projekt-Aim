@@ -1,16 +1,19 @@
 [gd_scene format=3 uid="uid://socklm58t3aw"]
 
 [ext_resource type="PackedScene" uid="uid://n3fd1cd511bi" path="res://assets/models/game_asset_explosive_barrel.glb" id="1_2egva"]
+[ext_resource type="Script" uid="uid://jeh3jgk2jads" path="res://entities/props/explosive_barrel.gd" id="1_eo2bt"]
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_d3wnt"]
 height = 1.6939697
 radius = 0.53271484
 
 [node name="ExplosiveBarrel" type="RigidBody3D" unique_id=1210652784]
+script = ExtResource("1_eo2bt")
+hit_material_type = 1
+
+[node name="game_asset_explosive_barrel" parent="." unique_id=688624775 instance=ExtResource("1_2egva")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1133141254]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -0.001159668, 0)
 shape = SubResource("CylinderShape3D_d3wnt")
-
-[node name="game_asset_explosive_barrel" parent="." unique_id=688624775 instance=ExtResource("1_2egva")]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
