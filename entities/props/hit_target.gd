@@ -6,7 +6,7 @@ enum TargetMaterial { WOOD, METAL, CONCRETE, FLESH }
 
 @export var hit_material_type = TargetMaterial.WOOD 
 
-func on_shot():
+func on_shot(position: Vector3, normal: Vector3):
 	print("Trafiono w: " + TargetMaterial.keys()[hit_material_type])
 
 # Called when the node enters the scene tree for the first time.

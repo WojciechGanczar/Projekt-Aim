@@ -31,9 +31,4 @@ func shoot_ray():
 		var target = raycast_result.collider
 		
 		if target is HitTarget:
-			target.on_shot()
-		else:
-			var hit_position = raycast_result.position
-			var surface_normal = raycast_result.normal
-			print("Trafiono w: BETON, w miejscu: " + str(hit_position) 
-			+ " pod kątem: " + str(surface_normal))
+			target.on_shot(raycast_result.position, raycast_result.normal)

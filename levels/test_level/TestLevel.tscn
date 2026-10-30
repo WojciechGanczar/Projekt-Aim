@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://d4jsjm6wi6kra"]
 
+[ext_resource type="PackedScene" uid="uid://bxg85vwylsbou" path="res://assets/vfx/VFXMetalImpact.tscn" id="1_g0xuf"]
 [ext_resource type="Texture2D" uid="uid://cwgnhrh8c0dg2" path="res://assets/textures/texture_08.png" id="1_sjoxp"]
 [ext_resource type="PackedScene" uid="uid://n5yiruucilvc" path="res://ui/hud.tscn" id="2_sjoxp"]
 [ext_resource type="PackedScene" uid="uid://dmbdm1m7887hk" path="res://entities/props/woodenCrate.tscn" id="3_xhwnm"]
@@ -23,6 +24,9 @@ uv1_triplanar = true
 uv1_triplanar_sharpness = 5.0982327
 
 [node name="TestLevel" type="Node3D" unique_id=1724578338]
+
+[node name="VfxSparks" parent="." unique_id=1010348479 instance=ExtResource("1_g0xuf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 1, -1.5)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1783089751]
 environment = SubResource("Environment_xhwnm")
