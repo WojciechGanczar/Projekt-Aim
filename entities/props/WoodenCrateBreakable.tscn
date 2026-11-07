@@ -1148,5 +1148,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3092187, -0.96763074, 0.59
 shape = SubResource("ConvexPolygonShape3D_x0j6w")
 
 [node name="Timer" type="Timer" parent="." unique_id=1139253591]
+wait_time = 3.0
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

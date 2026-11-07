@@ -1,20 +1,20 @@
 extends Node3D
 
 @onready var timer: Timer = $Timer
+var blink_accumulator = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	timer.start()
 
-
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	pass
+	var threshold = timer.time_left * 0.1
+	blink_accumulator += delta
+	
+	if(blink_accumulator >= threshold):
+		blink_accumulator = 0
+		visible = !visible
 
 func _on_timer_timeout():
-	var tween = get_tree().create_tween()
-	for i in 7:
-		tween.tween_property(self, "visible", false, 0.15)
-		tween.tween_property(self, "visible", true, 0.15)
-	
-	tween.tween_callback(queue_free)
+	queue_free()

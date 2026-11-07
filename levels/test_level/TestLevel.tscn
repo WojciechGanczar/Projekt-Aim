@@ -32,7 +32,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 1, -1.5)
 environment = SubResource("Environment_xhwnm")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1013012989]
-transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 20, -9.5)
+transform = Transform3D(-0.86602545, -0.3535534, -0.35355347, 0, -0.70710677, 0.70710677, -0.50000006, 0.6123724, 0.61237246, 0, 20, -9.5)
 shadow_enabled = true
 
 [node name="CSGCombiner3D" type="CSGCombiner3D" parent="." unique_id=1513879358]
@@ -70,4 +70,3 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 1.5, -2)
 
 [node name="Player" parent="." unique_id=2073773162 instance=ExtResource("5_cgcgp")]
 transform = Transform3D(1, 0, 0, 0, 1.0000001, 0, 0, 0, 1.0000001, 0, 0.5, 2)
-script = null
