@@ -3,8 +3,8 @@
 [ext_resource type="PackedScene" uid="uid://bxg85vwylsbou" path="res://assets/vfx/VFXMetalImpact.tscn" id="1_g0xuf"]
 [ext_resource type="Texture2D" uid="uid://cwgnhrh8c0dg2" path="res://assets/textures/texture_08.png" id="1_sjoxp"]
 [ext_resource type="PackedScene" uid="uid://n5yiruucilvc" path="res://ui/hud.tscn" id="2_sjoxp"]
-[ext_resource type="PackedScene" uid="uid://dmbdm1m7887hk" path="res://entities/props/woodenCrate.tscn" id="3_xhwnm"]
-[ext_resource type="PackedScene" uid="uid://socklm58t3aw" path="res://entities/props/explosiveBarrel.tscn" id="4_cgcgp"]
+[ext_resource type="PackedScene" uid="uid://dmbdm1m7887hk" path="res://entities/props/WoodenCrate.tscn" id="3_xhwnm"]
+[ext_resource type="PackedScene" uid="uid://socklm58t3aw" path="res://entities/props/ExplosiveBarrel.tscn" id="4_cgcgp"]
 [ext_resource type="PackedScene" uid="uid://dfgfd8eo3o3md" path="res://entities/player/player.tscn" id="5_cgcgp"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_sjoxp"]
@@ -59,14 +59,23 @@ material = SubResource("StandardMaterial3D_cy2ho")
 [node name="WoodenCrate" parent="." unique_id=1318648761 instance=ExtResource("3_xhwnm")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, -6)
 
-[node name="ExplosiveBarrel" parent="." unique_id=1210652784 instance=ExtResource("4_cgcgp")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.5, -3.5)
-
 [node name="WoodenCrate2" parent="." unique_id=791506445 instance=ExtResource("3_xhwnm")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.5, -2)
 
+[node name="ExplosiveBarrel" parent="." unique_id=1210652784 instance=ExtResource("4_cgcgp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.5, -3.5)
+
 [node name="ExplosiveBarrel2" parent="." unique_id=951254413 instance=ExtResource("4_cgcgp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 1.5, -2)
+
+[node name="ExplosiveBarrel3" parent="." unique_id=1009977643 instance=ExtResource("4_cgcgp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0.5, -3)
+
+[node name="ExplosiveBarrel4" parent="." unique_id=602143370 instance=ExtResource("4_cgcgp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, -3)
+
+[node name="ExplosiveBarrel5" parent="." unique_id=1037604891 instance=ExtResource("4_cgcgp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 2, -6)
 
 [node name="Player" parent="." unique_id=2073773162 instance=ExtResource("5_cgcgp")]
 transform = Transform3D(1, 0, 0, 0, 1.0000001, 0, 0, 0, 1.0000001, 0, 0.5, 2)

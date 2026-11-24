@@ -1,7 +1,15 @@
 [gd_scene format=4 uid="uid://cvdrx4cp6ehm5"]
 
-[ext_resource type="Script" uid="uid://bidup8igey7ac" path="res://entities/props/wooden_crate_breakable.gd" id="1_xdxxg"]
+[ext_resource type="Script" uid="uid://bpli4xte4ch7c" path="res://components/despawn_blinker.gd" id="1_xdxxg"]
 [ext_resource type="Texture2D" uid="uid://cap3jn81btmgw" path="res://assets/models/game_asset_wooden_crate_breakable_texture_wooden_crate.png" id="2_xygxm"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_m13mp"]
+transparency = 1
+shading_mode = 2
+albedo_color = Color(1, 1, 1, 0.5294118)
+albedo_texture = ExtResource("2_xygxm")
+metallic_specular = 0.0
+texture_filter = 2
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ubyqa"]
 resource_name = "Material.002"
@@ -879,7 +887,6 @@ points = PackedVector3Array(0.1432074, 0.027630746, -0.09926471, 0.12758756, 0.0
 
 [node name="WoodenCrateBreakable" type="Node3D" unique_id=611859673]
 transform = Transform3D(0.3, 0, 0, 0, -1.3113417e-08, 0.3, 0, -0.3, -1.3113417e-08, 0, 0, 0)
-script = ExtResource("1_xdxxg")
 
 [node name="game_asset_wooden_crate_breakable" type="Node3D" parent="." unique_id=1083608044]
 
@@ -888,6 +895,7 @@ collision_layer = 17
 
 [node name="Cube_cell" type="MeshInstance3D" parent="game_asset_wooden_crate_breakable/RigidBody3D" unique_id=533509183]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.3141833, -0.90527904, 0.82252836)
+material_override = SubResource("StandardMaterial3D_m13mp")
 mesh = SubResource("ArrayMesh_dol63")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="game_asset_wooden_crate_breakable/RigidBody3D" unique_id=1666700408]
@@ -899,6 +907,7 @@ collision_layer = 17
 
 [node name="Cube_cell_001" type="MeshInstance3D" parent="game_asset_wooden_crate_breakable/RigidBody3D2" unique_id=670547037]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.86243224, 0.77858704, 0.9492019)
+material_override = SubResource("StandardMaterial3D_m13mp")
 mesh = SubResource("ArrayMesh_l1i7v")
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="game_asset_wooden_crate_breakable/RigidBody3D2" unique_id=3042345]
@@ -910,6 +919,7 @@ collision_layer = 17
 
 [node name="Cube_cell_002" type="MeshInstance3D" parent="game_asset_wooden_crate_breakable/RigidBody3D3" unique_id=1003241628]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.84778976, 0.2893762, 0.74289685)
+material_override = SubResource("StandardMaterial3D_m13mp")
 mesh = SubResource("ArrayMesh_kbvjt")
 
 [node name="CollisionShape3D3" type="CollisionShape3D" parent="game_asset_wooden_crate_breakable/RigidBody3D3" unique_id=2074576559]
@@ -921,6 +931,7 @@ collision_layer = 17
 
 [node name="Cube_cell_003" type="MeshInstance3D" parent="game_asset_wooden_crate_breakable/RigidBody3D4" unique_id=1451086511]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.8103591, -0.6554641, -0.2777687)
+material_override = SubResource("StandardMaterial3D_m13mp")
 mesh = SubResource("ArrayMesh_pkfge")
 
 [node name="CollisionShape3D4" type="CollisionShape3D" parent="game_asset_wooden_crate_breakable/RigidBody3D4" unique_id=2119389688]
@@ -932,6 +943,7 @@ collision_layer = 17
 
 [node name="Cube_cell_004" type="MeshInstance3D" parent="game_asset_wooden_crate_breakable/RigidBody3D5" unique_id=428049234]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.95797557, 0.43926522, 0.7360053)
+material_override = SubResource("StandardMaterial3D_m13mp")
 mesh = SubResource("ArrayMesh_ajpj4")
 
 [node name="CollisionShape3D5" type="CollisionShape3D" parent="game_asset_wooden_crate_breakable/RigidBody3D5" unique_id=1452171246]
@@ -943,6 +955,7 @@ collision_layer = 17
 
 [node name="Cube_cell_005" type="MeshInstance3D" parent="game_asset_wooden_crate_breakable/RigidBody3D6" unique_id=1394236349]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6508853, -0.45914134, 0.7986244)
+material_override = SubResource("StandardMaterial3D_m13mp")
 mesh = SubResource("ArrayMesh_2wqke")
 
 [node name="CollisionShape3D6" type="CollisionShape3D" parent="game_asset_wooden_crate_breakable/RigidBody3D6" unique_id=1364139062]
@@ -954,6 +967,7 @@ collision_layer = 17
 
 [node name="Cube_cell_006" type="MeshInstance3D" parent="game_asset_wooden_crate_breakable/RigidBody3D7" unique_id=339987974]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.14760968, -0.96783674, 0.2334966)
+material_override = SubResource("StandardMaterial3D_m13mp")
 mesh = SubResource("ArrayMesh_r6dbl")
 
 [node name="CollisionShape3D7" type="CollisionShape3D" parent="game_asset_wooden_crate_breakable/RigidBody3D7" unique_id=1513752893]
@@ -965,6 +979,7 @@ collision_layer = 17
 
 [node name="Cube_cell_007" type="MeshInstance3D" parent="game_asset_wooden_crate_breakable/RigidBody3D8" unique_id=2102112757]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.16031247, -0.7918801, -0.72046775)
+material_override = SubResource("StandardMaterial3D_m13mp")
 mesh = SubResource("ArrayMesh_8pdvh")
 
 [node name="CollisionShape3D8" type="CollisionShape3D" parent="game_asset_wooden_crate_breakable/RigidBody3D8" unique_id=816400602]
@@ -976,6 +991,7 @@ collision_layer = 17
 
 [node name="Cube_cell_008" type="MeshInstance3D" parent="game_asset_wooden_crate_breakable/RigidBody3D9" unique_id=470733179]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.67208755, -0.84928346, 0.51880646)
+material_override = SubResource("StandardMaterial3D_m13mp")
 mesh = SubResource("ArrayMesh_bn0l0")
 
 [node name="CollisionShape3D9" type="CollisionShape3D" parent="game_asset_wooden_crate_breakable/RigidBody3D9" unique_id=391361535]
@@ -987,6 +1003,7 @@ collision_layer = 17
 
 [node name="Cube_cell_009" type="MeshInstance3D" parent="game_asset_wooden_crate_breakable/RigidBody3D10" unique_id=424084055]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.69952464, 0.9326298, -0.79441965)
+material_override = SubResource("StandardMaterial3D_m13mp")
 mesh = SubResource("ArrayMesh_2yq5l")
 
 [node name="CollisionShape3D10" type="CollisionShape3D" parent="game_asset_wooden_crate_breakable/RigidBody3D10" unique_id=1024204452]
@@ -998,6 +1015,7 @@ collision_layer = 17
 
 [node name="Cube_cell_010" type="MeshInstance3D" parent="game_asset_wooden_crate_breakable/RigidBody3D11" unique_id=1632869641]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.86756223, -0.5828575, -0.3062128)
+material_override = SubResource("StandardMaterial3D_m13mp")
 mesh = SubResource("ArrayMesh_35m5d")
 
 [node name="CollisionShape3D11" type="CollisionShape3D" parent="game_asset_wooden_crate_breakable/RigidBody3D11" unique_id=1969075136]
@@ -1009,6 +1027,7 @@ collision_layer = 17
 
 [node name="Cube_cell_011" type="MeshInstance3D" parent="game_asset_wooden_crate_breakable/RigidBody3D12" unique_id=1175108062]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.017693073, 0.6869266, 0.739614)
+material_override = SubResource("StandardMaterial3D_m13mp")
 mesh = SubResource("ArrayMesh_a4dht")
 
 [node name="CollisionShape3D12" type="CollisionShape3D" parent="game_asset_wooden_crate_breakable/RigidBody3D12" unique_id=1107399684]
@@ -1020,6 +1039,7 @@ collision_layer = 17
 
 [node name="Cube_cell_012" type="MeshInstance3D" parent="game_asset_wooden_crate_breakable/RigidBody3D13" unique_id=1394653265]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.99683946, 0.98610175, -0.94941425)
+material_override = SubResource("StandardMaterial3D_m13mp")
 mesh = SubResource("ArrayMesh_jwumw")
 
 [node name="CollisionShape3D13" type="CollisionShape3D" parent="game_asset_wooden_crate_breakable/RigidBody3D13" unique_id=1781106991]
@@ -1031,6 +1051,7 @@ collision_layer = 17
 
 [node name="Cube_cell_013" type="MeshInstance3D" parent="game_asset_wooden_crate_breakable/RigidBody3D14" unique_id=1832655276]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.68491083, 0.5814018, -0.34305492)
+material_override = SubResource("StandardMaterial3D_m13mp")
 mesh = SubResource("ArrayMesh_aelas")
 
 [node name="CollisionShape3D14" type="CollisionShape3D" parent="game_asset_wooden_crate_breakable/RigidBody3D14" unique_id=1521523694]
@@ -1042,6 +1063,7 @@ collision_layer = 17
 
 [node name="Cube_cell_014" type="MeshInstance3D" parent="game_asset_wooden_crate_breakable/RigidBody3D15" unique_id=1885035600]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.63592184, 0.7244579, -0.111071125)
+material_override = SubResource("StandardMaterial3D_m13mp")
 mesh = SubResource("ArrayMesh_vatsx")
 
 [node name="CollisionShape3D15" type="CollisionShape3D" parent="game_asset_wooden_crate_breakable/RigidBody3D15" unique_id=1713400692]
@@ -1053,6 +1075,7 @@ collision_layer = 17
 
 [node name="Cube_cell_015" type="MeshInstance3D" parent="game_asset_wooden_crate_breakable/RigidBody3D16" unique_id=86028811]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6530681, -0.20616609, 0.84145635)
+material_override = SubResource("StandardMaterial3D_m13mp")
 mesh = SubResource("ArrayMesh_vy04t")
 
 [node name="CollisionShape3D16" type="CollisionShape3D" parent="game_asset_wooden_crate_breakable/RigidBody3D16" unique_id=1069668579]
@@ -1064,6 +1087,7 @@ collision_layer = 17
 
 [node name="Cube_cell_016" type="MeshInstance3D" parent="game_asset_wooden_crate_breakable/RigidBody3D17" unique_id=1580733513]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8648852, 0.7162229, 0.62373835)
+material_override = SubResource("StandardMaterial3D_m13mp")
 mesh = SubResource("ArrayMesh_log7e")
 
 [node name="CollisionShape3D17" type="CollisionShape3D" parent="game_asset_wooden_crate_breakable/RigidBody3D17" unique_id=354504841]
@@ -1075,6 +1099,7 @@ collision_layer = 17
 
 [node name="Cube_cell_017" type="MeshInstance3D" parent="game_asset_wooden_crate_breakable/RigidBody3D18" unique_id=1320744839]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.44370914, 0.45396787, -0.8020219)
+material_override = SubResource("StandardMaterial3D_m13mp")
 mesh = SubResource("ArrayMesh_quxvv")
 
 [node name="CollisionShape3D18" type="CollisionShape3D" parent="game_asset_wooden_crate_breakable/RigidBody3D18" unique_id=818804288]
@@ -1086,6 +1111,7 @@ collision_layer = 17
 
 [node name="Cube_cell_018" type="MeshInstance3D" parent="game_asset_wooden_crate_breakable/RigidBody3D19" unique_id=400790292]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.88380647, 0.98767614, -0.9917055)
+material_override = SubResource("StandardMaterial3D_m13mp")
 mesh = SubResource("ArrayMesh_82wfj")
 
 [node name="CollisionShape3D19" type="CollisionShape3D" parent="game_asset_wooden_crate_breakable/RigidBody3D19" unique_id=946041484]
@@ -1097,6 +1123,7 @@ collision_layer = 17
 
 [node name="Cube_cell_019" type="MeshInstance3D" parent="game_asset_wooden_crate_breakable/RigidBody3D20" unique_id=1490253355]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3054982, -0.94432294, 0.8933922)
+material_override = SubResource("StandardMaterial3D_m13mp")
 mesh = SubResource("ArrayMesh_0v84m")
 
 [node name="CollisionShape3D20" type="CollisionShape3D" parent="game_asset_wooden_crate_breakable/RigidBody3D20" unique_id=281508186]
@@ -1108,6 +1135,7 @@ collision_layer = 17
 
 [node name="Cube_cell_020" type="MeshInstance3D" parent="game_asset_wooden_crate_breakable/RigidBody3D21" unique_id=744739656]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.9263032, -0.8583499, 0.5804244)
+material_override = SubResource("StandardMaterial3D_m13mp")
 mesh = SubResource("ArrayMesh_0g0jd")
 
 [node name="CollisionShape3D21" type="CollisionShape3D" parent="game_asset_wooden_crate_breakable/RigidBody3D21" unique_id=1592611018]
@@ -1119,6 +1147,7 @@ collision_layer = 17
 
 [node name="Cube_cell_021" type="MeshInstance3D" parent="game_asset_wooden_crate_breakable/RigidBody3D22" unique_id=2030071707]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.81537116, 0.88093144, 0.7618915)
+material_override = SubResource("StandardMaterial3D_m13mp")
 mesh = SubResource("ArrayMesh_bole2")
 
 [node name="CollisionShape3D22" type="CollisionShape3D" parent="game_asset_wooden_crate_breakable/RigidBody3D22" unique_id=445303769]
@@ -1130,6 +1159,7 @@ collision_layer = 17
 
 [node name="Cube_cell_022" type="MeshInstance3D" parent="game_asset_wooden_crate_breakable/RigidBody3D23" unique_id=448646522]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.9697731, 0.7592398, 0.55628985)
+material_override = SubResource("StandardMaterial3D_m13mp")
 mesh = SubResource("ArrayMesh_5uxkv")
 
 [node name="CollisionShape3D23" type="CollisionShape3D" parent="game_asset_wooden_crate_breakable/RigidBody3D23" unique_id=552606151]
@@ -1141,6 +1171,7 @@ collision_layer = 17
 
 [node name="Cube_cell_023" type="MeshInstance3D" parent="game_asset_wooden_crate_breakable/RigidBody3D24" unique_id=148543249]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3092187, -0.96763074, 0.59056187)
+material_override = SubResource("StandardMaterial3D_m13mp")
 mesh = SubResource("ArrayMesh_dpf7x")
 
 [node name="CollisionShape3D24" type="CollisionShape3D" parent="game_asset_wooden_crate_breakable/RigidBody3D24" unique_id=430123618]
@@ -1149,5 +1180,4 @@ shape = SubResource("ConvexPolygonShape3D_x0j6w")
 
 [node name="Timer" type="Timer" parent="." unique_id=1139253591]
 wait_time = 3.0
-
-[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+script = ExtResource("1_xdxxg")

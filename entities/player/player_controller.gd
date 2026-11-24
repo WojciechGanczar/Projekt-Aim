@@ -2,6 +2,8 @@ extends CharacterBody3D
 
 @onready var camera: Camera3D = $Camera3D
 
+const DAMAGE = 1
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	camera = get_viewport().get_camera_3d()
@@ -31,4 +33,4 @@ func shoot_ray():
 		var target = raycast_result.collider
 		
 		if target is HitTarget:
-			target.on_shot(raycast_result.position, raycast_result.normal)
+			target.on_shot(raycast_result.position, raycast_result.normal, DAMAGE)

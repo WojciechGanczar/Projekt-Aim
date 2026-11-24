@@ -2,6 +2,13 @@
 
 [ext_resource type="Script" uid="uid://s11xit4fpms" path="res://entities/props/wooden_crate.gd" id="1_7uqq6"]
 [ext_resource type="PackedScene" uid="uid://dv8hw3wlxos1t" path="res://assets/models/game_asset_wooden_crate.glb" id="1_obbym"]
+[ext_resource type="Texture2D" uid="uid://b6xc63vngk7rb" path="res://assets/models/game_asset_wooden_crate_texture_wooden_crate.png" id="3_20f5f"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_08pas"]
+shading_mode = 2
+albedo_texture = ExtResource("3_20f5f")
+metallic_specular = 0.0
+texture_filter = 2
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_d3wnt"]
 size = Vector3(2, 2, 2)
@@ -9,9 +16,14 @@ size = Vector3(2, 2, 2)
 [node name="WoodenCrate" type="RigidBody3D" unique_id=1318648761]
 script = ExtResource("1_7uqq6")
 
+[node name="game_asset_wooden_crate" parent="." unique_id=1987811767 instance=ExtResource("1_obbym")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, 0, 0)
+
+[node name="Cube" parent="game_asset_wooden_crate" index="0" unique_id=1952422458]
+material_override = SubResource("StandardMaterial3D_08pas")
+
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=807395521]
 transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, 0, 0)
 shape = SubResource("BoxShape3D_d3wnt")
 
-[node name="game_asset_wooden_crate" parent="." unique_id=1987811767 instance=ExtResource("1_obbym")]
-transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, 0, 0)
+[editable path="game_asset_wooden_crate"]
