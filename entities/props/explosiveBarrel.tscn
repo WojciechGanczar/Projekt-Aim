@@ -15,6 +15,7 @@ height = 1.6939697
 radius = 0.53271484
 
 [node name="ExplosiveBarrel" type="RigidBody3D" unique_id=1210652784]
+collision_mask = 17
 script = ExtResource("1_eo2bt")
 hit_material_type = 1
 

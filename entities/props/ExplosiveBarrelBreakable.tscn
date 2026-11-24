@@ -283,7 +283,8 @@ shape = SubResource("SphereShape3D_d3wnt")
 
 [node name="RigidBody3D" type="RigidBody3D" parent="game_asset_explosive_barrel_breakable" unique_id=1885511411]
 transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0)
-collision_layer = 17
+collision_layer = 16
+collision_mask = 17
 
 [node name="Cylinder_cell" type="MeshInstance3D" parent="game_asset_explosive_barrel_breakable/RigidBody3D" unique_id=661323095]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.10968646, 0.73838824, -0.27684608)
@@ -296,7 +297,8 @@ shape = SubResource("ConvexPolygonShape3D_k50pv")
 
 [node name="RigidBody3D2" type="RigidBody3D" parent="game_asset_explosive_barrel_breakable" unique_id=123657235]
 transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0)
-collision_layer = 17
+collision_layer = 16
+collision_mask = 17
 
 [node name="Cylinder_cell_001" type="MeshInstance3D" parent="game_asset_explosive_barrel_breakable/RigidBody3D2" unique_id=411078844]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.11968847, 0.49836373, 0.3218852)
@@ -309,7 +311,8 @@ shape = SubResource("ConvexPolygonShape3D_wctwa")
 
 [node name="RigidBody3D3" type="RigidBody3D" parent="game_asset_explosive_barrel_breakable" unique_id=487128167]
 transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0)
-collision_layer = 17
+collision_layer = 16
+collision_mask = 17
 
 [node name="Cylinder_cell_002" type="MeshInstance3D" parent="game_asset_explosive_barrel_breakable/RigidBody3D3" unique_id=1920601667]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13198884, -0.095971376, 0.32296726)
@@ -322,7 +325,8 @@ shape = SubResource("ConvexPolygonShape3D_bec5w")
 
 [node name="RigidBody3D4" type="RigidBody3D" parent="game_asset_explosive_barrel_breakable" unique_id=375169419]
 transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0)
-collision_layer = 17
+collision_layer = 16
+collision_mask = 17
 
 [node name="Cylinder_cell_003" type="MeshInstance3D" parent="game_asset_explosive_barrel_breakable/RigidBody3D4" unique_id=962371668]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4421926, 0.44528532, 0.13469416)
@@ -335,7 +339,8 @@ shape = SubResource("ConvexPolygonShape3D_r4bl7")
 
 [node name="RigidBody3D5" type="RigidBody3D" parent="game_asset_explosive_barrel_breakable" unique_id=2768294]
 transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0)
-collision_layer = 17
+collision_layer = 16
+collision_mask = 17
 
 [node name="Cylinder_cell_004" type="MeshInstance3D" parent="game_asset_explosive_barrel_breakable/RigidBody3D5" unique_id=1124800519]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.20858991, -0.3741983, -0.2583783)
@@ -348,7 +353,8 @@ shape = SubResource("ConvexPolygonShape3D_4ajov")
 
 [node name="RigidBody3D6" type="RigidBody3D" parent="game_asset_explosive_barrel_breakable" unique_id=960305063]
 transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0)
-collision_layer = 17
+collision_layer = 16
+collision_mask = 17
 
 [node name="Cylinder_cell_005" type="MeshInstance3D" parent="game_asset_explosive_barrel_breakable/RigidBody3D6" unique_id=1526418020]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.40283698, -0.15789455, 0.017132387)
@@ -361,7 +367,8 @@ shape = SubResource("ConvexPolygonShape3D_87k1u")
 
 [node name="RigidBody3D7" type="RigidBody3D" parent="game_asset_explosive_barrel_breakable" unique_id=1740049968]
 transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, 0.40283695, -0.15789454, 0.017132385)
-collision_layer = 17
+collision_layer = 16
+collision_mask = 17
 
 [node name="Cylinder_cell_006" type="MeshInstance3D" parent="game_asset_explosive_barrel_breakable/RigidBody3D7" unique_id=951861216]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.47439036, 0.44440472, -0.32394922)
