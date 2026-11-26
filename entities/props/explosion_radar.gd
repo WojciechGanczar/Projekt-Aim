@@ -3,7 +3,7 @@ extends Area3D
 const EXPLOSION_DAMAGE = 3
 
 # Called when the node enters the scene tree for the first time.
-func _ready() -> void:
+func _ready() -> void:	
 	await get_tree().physics_frame
 	await get_tree().physics_frame
 	queue_free()

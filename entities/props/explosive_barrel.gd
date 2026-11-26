@@ -8,6 +8,7 @@ func on_shot(position: Vector3, normal: Vector3, damage: int):
 	
 	hp -= damage
 	if hp < 1:
+		VfxManager.spawn_explosion(global_position)
 		var bk = breakable_explosive_barrel.instantiate()
 		get_parent().add_child(bk)
 		bk.global_transform = global_transform

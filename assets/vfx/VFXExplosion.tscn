@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://bs08n4ylj5jih"]
+
+[ext_resource type="Texture2D" uid="uid://d6fxposjx7d" path="res://assets/textures/game_asset_texture_explosion.jpg" id="1_cbkha"]
+[ext_resource type="Script" uid="uid://bxq4og3tcwkqc" path="res://assets/vfx/vfx_explosion.gd" id="1_tgtgc"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_aef82"]
+resource_local_to_scene = true
+transparency = 1
+blend_mode = 1
+shading_mode = 0
+albedo_color = Color(0.85882354, 0.5764706, 0.03137255, 1)
+albedo_texture = ExtResource("1_cbkha")
+uv1_triplanar = true
+texture_filter = 0
+
+[sub_resource type="SphereMesh" id="SphereMesh_d3wnt"]
+resource_local_to_scene = true
+material = SubResource("StandardMaterial3D_aef82")
+radial_segments = 8
+rings = 4
+
+[node name="VfxExplosion" type="Node3D" unique_id=1720017871]
+script = ExtResource("1_tgtgc")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=537699062]
+mesh = SubResource("SphereMesh_d3wnt")
