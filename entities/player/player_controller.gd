@@ -27,7 +27,7 @@ func shoot_ray():
 	ray_query.from = from
 	ray_query.to = to
 	
-	collision_mask = 1
+	ray_query.collision_mask = 1
 	
 	var raycast_result = space.intersect_ray(ray_query)
 	

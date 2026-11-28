@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://clqsctasmrjpe"]
 
+[ext_resource type="Script" uid="uid://dqn2brltaul41" path="res://assets/vfx/vfx_wood_impact.gd" id="1_8buv8"]
 [ext_resource type="Texture2D" uid="uid://twixgitmepro" path="res://assets/vfx/texture_sheet_splinters.png" id="1_pl0vt"]
 [ext_resource type="Texture2D" uid="uid://b7rsxf1qyn78j" path="res://assets/vfx/texture_sheet_dust.png" id="2_k3efd"]
 
@@ -72,6 +73,7 @@ material = SubResource("StandardMaterial3D_smudl")
 size = Vector2(0.3, 0.3)
 
 [node name="VfxWoodImpact" type="Node3D" unique_id=683976540]
+script = ExtResource("1_8buv8")
 
 [node name="Splinters" type="GPUParticles3D" parent="." unique_id=1169302293]
 emitting = false
@@ -92,3 +94,6 @@ randomness = 1.0
 fixed_fps = 60
 process_material = SubResource("ParticleProcessMaterial_1fe06")
 draw_pass_1 = SubResource("QuadMesh_1qi2e")
+
+[connection signal="finished" from="Splinters" to="." method="_on_splinters_finished"]
+[connection signal="finished" from="Dust" to="." method="_on_dust_finished"]

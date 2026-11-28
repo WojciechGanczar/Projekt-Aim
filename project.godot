@@ -36,6 +36,11 @@ click={
 ]
 }
 
+[layer_names]
+
+3d_physics/layer_1="World_Targets"
+3d_physics/layer_5="Debris"
+
 [physics]
 
 3d/physics_engine="Jolt Physics"

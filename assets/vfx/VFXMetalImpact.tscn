@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://bxg85vwylsbou"]
 
+[ext_resource type="Script" uid="uid://cq0mwo7f3uo63" path="res://assets/vfx/vfx_metal_impact.gd" id="1_2j3pe"]
+
 [sub_resource type="Curve" id="Curve_0ts27"]
 _data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.74619293, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
 point_count = 3
@@ -32,6 +34,7 @@ bottom_radius = 0.0
 height = 0.2
 
 [node name="VfxMetalImpact" type="Node3D" unique_id=1010348479]
+script = ExtResource("1_2j3pe")
 
 [node name="GPUParticles3D" type="GPUParticles3D" parent="." unique_id=347936014]
 emitting = false
